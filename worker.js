@@ -10,6 +10,11 @@ window.addEventListener('click',function(e) {
 });
 
 function publishResults(jenkinsUrl, jobName, matchedBuilds){
+	//remove previous results if any!
+	while (jobResultsList.hasChildNodes()) {
+	    jobResultsList.removeChild(jobResultsList.lastChild);
+	}
+
 	console.log('Your matched builds are: ' + JSON.stringify(matchedBuilds));  
 	matchedBuilds.forEach(function(buildNo) {
 		var li = document.createElement("li");
