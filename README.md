@@ -11,6 +11,21 @@ certain criteria and return a list of jobs which match your criteria.
 * Date range
 * 
 
+## Install/Develop
+
+To install locally:
+
+* Clone/fork the repo
+* go to `chrome://extensions`
+* Click `Devleoper Mode`
+* Click load unpacked extensions
+* Navigate to your clone/form and click confirm
+* It Should now appear in your extensions bar!
+
+If you have made code changes locally after doing the above:
+
+* got to `chrome://extensions`
+* Locate this extension in the list and click `reload` or refresh the page
 
 ## Usage
 
