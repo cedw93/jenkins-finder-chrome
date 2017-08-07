@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        height: 300px;
+        width: 440px;
+      }
+      .wrapper {
+      text-align: center;
+      }
+      input, textarea { 
+          width: 420px; 
+      }
+      input#save { 
+          font-weight: bold; width: auto; 
+      }
+    </style>
+    <script src="jquery-3.2.1.min.js"></script>
+  </head>
+<body>
+  <div>
+  <form id="jenkins-job-checker-form">
+    <p><label for="job-name">Job Name</label><br />
+      <input type="text" id="job-name" name="job-name" size="50" value="" /></p>
+    <p><label for="job-params">Params</label><br />
+      <textarea id="job-params" name="job-params" rows="6" cols="35"></textarea></p>
+    <input id="find-builds" type="button" value="Find Builds" />
+      <span id="status-display"></span>
+    </p>
+    <p><label for="job-results">Results</label><br />
+      <div id="job-results" style="padding: 0;">
+            <ul id="job-results-list">
+            </ul>
+        </div>
+      </p>
+    </p>
+  </form>
+</div>
+  <script type="text/javascript" src="worker.js"></script>
+</body>
+</html>
