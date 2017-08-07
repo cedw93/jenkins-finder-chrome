@@ -9,6 +9,7 @@ certain criteria and return a list of jobs which match your criteria.
 * Nice(r) UI
 * Limits
 * Date range
+* 
 
 
 ## Usage
@@ -19,7 +20,7 @@ prepopulate the job name for you but you can change this to any jenkins job on t
 Once you have specified the job name, you need some criteria to match it against...
 
 
-###Criteria
+### Criteria (Params)
 
 The critera is a comma seperated string of the following format
 
@@ -29,7 +30,7 @@ PARAM=VALUE=regex|exact,PARAM=VALUE=regex|exact,PARAM=VALUE=regex|exact,...
 
 Where
 
-* `PARAM` is the name job paramater you will be matching against (not case sensitive)
+* `PARAM` is the name job paramater you will be matching against (case sensitive)
 * `VALUE` is the value of the `PARAM` you will be matching against
 * `regex|exact` is the type of match to perform... (optional)
 	* a `regex` match will perform a regex match using `VALUE` as the regex
